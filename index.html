@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Logo/favico.ico"> <!-- Agregar un logito para la pestaña del navegador -->
+    <title>Tienda Local</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Parte del encabezado y pie de página para mi DOM -->
+    <header>
+        <h1>Inventario de productos</h1>
+        <p>Crear, actualizar y eliminar productos</p>
+    </header>
+
+<main>
+
+    <section class="formulario-contenedor">
+        <h2 id="titulo-formulario">Insertar productos</h2>
+        
+            <input type="url"     id="input-imagen"       placeholder="URL de la imagen">
+            <input type="text"    id="input-titulo"       placeholder="nombre">
+            <textarea             id="input-descripcion"  placeholder="descripción"></textarea>
+            <input type="number"  id="input-precio"       placeholder="precio">
+            <input type="text"    id="input-cupon"        placeholder="Codigo de descuento">
+            
+            <button id="btn-guardar">Guardar Producto</button>
+    </section>
+
+    <!-- Contenedor para mostrar los productos registrados -->
+    <section class="productos-contenedor">
+        <h2>Productos registrados</h2>
+        <div id="lista-productos">
+        </div> 
+    </section>
+</main>
+    <script src="script.js"></script>
+</body> 
+</html>
